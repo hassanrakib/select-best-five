@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Your Penta</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__text">
+            <h1 class="header__heading">Select Your Penta for the Magic</h1>
+            <p class="header__paragraph">Your Penta is a football players exchange market from where you can choose your
+                best penta for your club.
+                We show you the best selling price for players.</p>
+        </div>
+    </header>
+    <!-- main -->
+    <main class="main">
+        <div class="wrapper">
+            <main class="grid">
+                <div class="player">
+                    <div class="player__img-container">
+                        <img class="player__img" src="images/messi.png" alt="">
+                    </div>
+                    <div class="player__text">
+                        <h3 class="player__title">Lionel Messi</h3>
+                        <small class="player__info">36 Goals - 126 Assist</small>
+                        <button class="btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="player__img-container">
+                        <img class="player__img" src="images/neymar.png" alt="">
+                    </div>
+                    <div class="player__text">
+                        <h3 class="player__title">Neymar Jr.</h3>
+                        <small class="player__info">36 Goals - 126 Assist</small>
+                        <button class="btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="player__img-container">
+                        <img class="player__img" src="images/kylian-mbappe.png" alt="">
+                    </div>
+                    <div class="player__text">
+                        <h3 class="player__title">Kylian Mbappe</h3>
+                        <small class="player__info">36 Goals - 126 Assist</small>
+                        <button class="btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="player__img-container">
+                        <img class="player__img" src="images/ramos.png" alt="">
+                    </div>
+                    <div class="player__text">
+                        <h3 class="player__title">Sergio Ramos</h3>
+                        <small class="player__info">36 Goals - 126 Assist</small>
+                        <button class="btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="player__img-container">
+                        <img class="player__img" src="images/machado.png" alt="">
+                    </div>
+                    <div class="player__text">
+                        <h3 class="player__title">Vitor Machado</h3>
+                        <small class="player__info">36 Goals - 126 Assist</small>
+                        <button class="btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="player__img-container">
+                        <img class="player__img" src="images/sanches.png" alt="">
+                    </div>
+                    <div class="player__text">
+                        <h3 class="player__title">Renato Sanches</h3>
+                        <small class="player__info">36 Goals - 126 Assist</small>
+                        <button class="btn">SELECT</button>
+                    </div>
+                </div>
+            </main>
+            <aside class="sidebar">
+                <div class="sidebar__card">
+                    <h2 class="sidebar__title">Selected-V</h2>
+                    <ol class="selected">
+                        <!-- selected__item will be here -->
+                    </ol>
+                </div>
+                <div class="sidebar__card">
+                    <h2 class="sidebar__title">Budget</h2>
+                    <div class="sidebar__flex">
+                        <p class="sidebar__flex-title">Per Player</p>
+                        <input type="number" class="sidebar__flex-input per-player-price">
+                    </div>
+                    <button class="btn calculate-total-player-price">Calculate</button>
+                    <div class="sidebar__flex">
+                        <p class="sidebar__flex-title">Player Expenses</p>
+                        <p class="sidebar__flex-price">$<span class="total-player-price">00<!--total player price will be here--></span></p>
+                    </div>
+                    <div class="sidebar__flex">
+                        <p class="sidebar__flex-title">Manager</p>
+                        <input type="number" class="sidebar__flex-input manager-expense">
+                    </div>
+                    <div class="sidebar__flex">
+                        <p class="sidebar__flex-title">Coach</p>
+                        <input type="number" class="sidebar__flex-input coach-expense">
+                    </div>
+                    <button class="btn calculate-total">Calculate Total</button>
+                    <div class="sidebar__flex">
+                        <p class="sidebar__flex-title">Total</p>
+                        <p class="sidebar__flex-pric">$<span class="total">00<!--total expense will be here--></span></p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

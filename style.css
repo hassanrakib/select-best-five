@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --black: #000000;
+    --light-black: #151515;
+    --grey: #CFCFCF;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+img {
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    color: white;
+    border: 0;
+    background-color: #015196;
+    padding: 0.7rem;
+    cursor: pointer;
+    width: 100%;
+}
+.btn:disabled {
+    cursor:not-allowed;
+    background: var(--light-black);
+}
+
+/* header */
+.header {
+    padding: 0.5rem 2rem;
+    background: var(--black);
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/mbappe.png"), url("images/card-psg.png");
+    background-repeat: no-repeat;
+    background-position: 0% 20%, right 10% bottom 85%;
+}
+
+.header__text {
+    color: var(--white);
+    text-align: center;
+    max-width: 500px;
+}
+.header__heading {
+    color: var(--grey);
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+/* main */
+.main {
+    background-color: var(--light-black);
+    padding: 2.5rem 0.8rem;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid {
+    flex-basis: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    color: var(--white);
+    gap: 1rem;
+}
+
+.player {
+    background-color: var(--black);
+    border: 1px solid #434343;
+}
+.player__text {
+    text-align: center;
+    padding: 1rem;
+}
+.player__title {
+    margin-bottom: 0.5rem;
+}
+.player__info {
+    display: block;
+    color: var(--grey);
+    margin-bottom: 1.3rem;
+}
+
+/* sidebar */
+.sidebar {
+    flex-basis: 20%;
+}
+.sidebar__card {
+    background: var(--black);
+    padding: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.sidebar__title {
+    text-align: center;
+}
+.sidebar__title::after {
+    content: "";
+    background-image: url("images/border.png");
+    display: block;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.sidebar__flex {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar__flex-title {
+    color: var(--grey);
+    white-space: nowrap;
+    margin-right: 1.5rem;
+}
+.sidebar__flex-input {
+    background: transparent;
+    border: 1px solid var(--white);
+    max-width: 80px;
+    color: var(--white);
+    padding: .4rem;
+}
+.selected {
+    margin-top: 1rem;
+}
+.selected__item {
+    margin: .3rem;
+    padding-left: 1rem;
+}
+.selected__item::marker {
+    font-size: 1.4rem;
+    color: var(--grey);
+}
